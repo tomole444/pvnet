@@ -1,0 +1,506 @@
+In file included from ./include/eigen3/Eigen/Core:316,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:60:39: warning: ignoring attributes on template argument ‘__m128’ [-Wignored-attributes]
+   60 | template<> struct is_arithmetic<__m128>  { enum { value = true }; };
+      |                                       ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:61:40: warning: ignoring attributes on template argument ‘__m128i’ [-Wignored-attributes]
+   61 | template<> struct is_arithmetic<__m128i> { enum { value = true }; };
+      |                                        ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:62:40: warning: ignoring attributes on template argument ‘__m128d’ [-Wignored-attributes]
+   62 | template<> struct is_arithmetic<__m128d> { enum { value = true }; };
+      |                                        ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:160:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__m128’} [-Wignored-attributes]
+  160 | template<> struct unpacket_traits<Packet4f> { typedef float  type; enum {size=4, alignment=Aligned16}; typedef Packet4f half; };
+      |                                           ^
+In file included from ./include/eigen3/Eigen/Core:316,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:161:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__m128d’} [-Wignored-attributes]
+  161 | template<> struct unpacket_traits<Packet2d> { typedef double type; enum {size=2, alignment=Aligned16}; typedef Packet2d half; };
+      |                                           ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:162:43: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__m128i’} [-Wignored-attributes]
+  162 | template<> struct unpacket_traits<Packet4i> { typedef int    type; enum {size=4, alignment=Aligned16}; typedef Packet4i half; };
+      |                                           ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:468:37: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__m128’} [-Wignored-attributes]
+  468 | struct protate_impl<offset, Packet4f>
+      |                                     ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:476:37: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__m128i’} [-Wignored-attributes]
+  476 | struct protate_impl<offset, Packet4i>
+      |                                     ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:484:37: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__m128d’} [-Wignored-attributes]
+  484 | struct protate_impl<offset, Packet2d>
+      |                                     ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:755:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__m128’} [-Wignored-attributes]
+  755 | struct palign_impl<Offset,Packet4f>
+      |                                   ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:778:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__m128i’} [-Wignored-attributes]
+  778 | struct palign_impl<Offset,Packet4i>
+      |                                   ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:801:35: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__m128d’} [-Wignored-attributes]
+  801 | struct palign_impl<Offset,Packet2d>
+      |                                   ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:815:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__m128’} [-Wignored-attributes]
+  815 | ptranspose(PacketBlock<Packet4f,4>& kernel) {
+      |                                  ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:820:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__m128d’} [-Wignored-attributes]
+  820 | ptranspose(PacketBlock<Packet2d,2>& kernel) {
+      |                                  ^
+./include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:827:34: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4i’ {aka ‘__m128i’} [-Wignored-attributes]
+  827 | ptranspose(PacketBlock<Packet4i,4>& kernel) {
+      |                                  ^
+In file included from ./include/eigen3/Eigen/Core:318,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:232:63: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__m128’} [-Wignored-attributes]
+  232 | template<> struct conj_helper<Packet4f, Packet2cf, false,false>
+      |                                                               ^
+./include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:241:63: warning: ignoring attributes on template argument ‘Eigen::internal::Packet4f’ {aka ‘__m128’} [-Wignored-attributes]
+  241 | template<> struct conj_helper<Packet2cf, Packet4f, false,false>
+      |                                                               ^
+./include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:433:63: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__m128d’} [-Wignored-attributes]
+  433 | template<> struct conj_helper<Packet2d, Packet1cd, false,false>
+      |                                                               ^
+./include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:442:63: warning: ignoring attributes on template argument ‘Eigen::internal::Packet2d’ {aka ‘__m128d’} [-Wignored-attributes]
+  442 | template<> struct conj_helper<Packet1cd, Packet2d, false,false>
+      |                                                               ^
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<float, 4>’:
+./include/eigen3/Eigen/src/Core/Matrix.h:144:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<float, 4, 1> >’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:220:49:   required from ‘struct Eigen::internal::traits<Eigen::Quaternion<float> >’
+./include/eigen3/Eigen/src/Geometry/RotationBase.h:34:56:   required from ‘class Eigen::RotationBase<Eigen::Quaternion<float>, 3>’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:35:7:   required from ‘class Eigen::QuaternionBase<Eigen::Quaternion<float> >’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:227:7:   required from ‘class Eigen::Quaternion<float>’
+./include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h:22:3:   required from here
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__m128’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__m128’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__m128’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(4) float>::half’ {aka ‘__m128’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:148:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__m128’} [-Wignored-attributes]
+  148 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from ./include/eigen3/Eigen/Core:343,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Matrix<float, 4, 1>, float, float, Eigen::DenseCoeffsBase<Eigen::Matrix<float, 4, 1>, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<float, 4, 1> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<float, 4, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<float, 4, 1> >’
+./include/eigen3/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<float, 4, 1>’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:287:16:   required from ‘class Eigen::Quaternion<float>’
+./include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h:22:3:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<float>::type’ {aka ‘__m128’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, 4>’:
+./include/eigen3/Eigen/src/Core/Matrix.h:144:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, 4, 1> >’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:220:49:   required from ‘struct Eigen::internal::traits<Eigen::Quaternion<double> >’
+./include/eigen3/Eigen/src/Geometry/RotationBase.h:34:56:   required from ‘class Eigen::RotationBase<Eigen::Quaternion<double>, 3>’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:35:7:   required from ‘class Eigen::QuaternionBase<Eigen::Quaternion<double> >’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:227:7:   required from ‘class Eigen::Quaternion<double>’
+./include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h:75:3:   required from here
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__m128d’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:148:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  148 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from ./include/eigen3/Eigen/Core:343,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Matrix<double, 4, 1>, double, double, Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 1>, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, 4, 1> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 4, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 4, 1> >’
+./include/eigen3/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, 4, 1>’
+./include/eigen3/Eigen/src/Geometry/Quaternion.h:287:16:   required from ‘class Eigen::Quaternion<double>’
+./include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h:75:3:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, -1>’:
+./include/eigen3/Eigen/src/Core/Matrix.h:144:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, -1, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1> >’
+./include/eigen3/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, -1, 1>’
+./include/ceres/gradient_checker.h:87:12:   required from here
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__m128d’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:148:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  148 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from ./include/eigen3/Eigen/Core:343,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Matrix<double, -1, 1>, double, double, Eigen::DenseCoeffsBase<Eigen::Matrix<double, -1, 1>, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, -1, 1> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, -1, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1> >’
+./include/eigen3/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, -1, 1>’
+./include/ceres/gradient_checker.h:87:12:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, 6>’:
+./include/eigen3/Eigen/src/Core/Matrix.h:144:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/eigen3/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, 6, 1, 0, 6, 1>’
+./include/ceres/jet.h:306:59:   required from ‘struct ceres::Jet<double, 6>’
+./include/ceres/internal/autodiff.h:232:34:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__m128d’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:148:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  148 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from ./include/eigen3/Eigen/Core:343,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Matrix<double, 6, 1, 0, 6, 1>, double, double, Eigen::DenseCoeffsBase<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/eigen3/Eigen/src/Core/Matrix.h:178:7:   required from ‘class Eigen::Matrix<double, 6, 1, 0, 6, 1>’
+./include/ceres/jet.h:306:59:   required from ‘struct ceres::Jet<double, 6>’
+./include/ceres/internal/autodiff.h:232:34:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 6, 1, 0, 6, 1> >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:44:7:   required from ‘class Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:338:30:   required from ‘Derived& Eigen::DenseBase<Derived>::setConstant(const Scalar&) [with Derived = Eigen::Matrix<double, 6, 1, 0, 6, 1>; Eigen::DenseBase<Derived>::Scalar = double]’
+./include/ceres/internal/autodiff.h:266:30:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >, double, double, Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+./include/eigen3/Eigen/src/Core/MapBase.h:177:34:   required from ‘class Eigen::MapBase<Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >, 1>’
+./include/eigen3/Eigen/src/Core/Map.h:89:79:   required from ‘class Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >’
+./include/ceres/internal/autodiff.h:196:12:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 0; int N = 6]’
+./include/ceres/internal/autodiff.h:306:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:454:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>, 2>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>, double, double, Eigen::DenseCoeffsBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>, 2>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false> >’
+./include/eigen3/Eigen/src/Core/MapBase.h:27:34:   required from ‘class Eigen::MapBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>, 0>’
+./include/eigen3/Eigen/src/Core/Block.h:333:7:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+./include/eigen3/Eigen/src/Core/Block.h:104:81:   required from ‘class Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>’
+./include/eigen3/Eigen/src/Core/VectorBlock.h:57:47:   required from ‘class Eigen::VectorBlock<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6>’
+./include/ceres/internal/autodiff.h:197:37:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 0; int N = 6]’
+./include/ceres/internal/autodiff.h:306:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h: In instantiation of ‘struct Eigen::internal::find_best_packet<double, 0>’:
+./include/eigen3/Eigen/src/Core/Matrix.h:144:57:   required from ‘struct Eigen::internal::traits<Eigen::Matrix<double, 0, 1, 0, 0, 1> >’
+./include/eigen3/Eigen/src/Core/Map.h:69:8:   required from ‘struct Eigen::internal::traits<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> > >’
+./include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:32:48:   required from ‘struct Eigen::internal::accessors_level<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> > >’
+./include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:116:75:   required from ‘class Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >’
+./include/ceres/internal/autodiff.h:196:12:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 6; int N = 0]’
+./include/ceres/internal/autodiff.h:307:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:44: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  130 |          bool Stop = Size==Dynamic || (Size%unpacket_traits<PacketType>::size)==0 || is_same<PacketType,typename unpacket_traits<PacketType>::half>::value>
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:130:83: warning: ignoring attributes on template argument ‘Eigen::internal::unpacket_traits<__vector(2) double>::half’ {aka ‘__m128d’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:298,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:148:88: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  148 |   typedef typename find_best_packet_helper<Size,typename packet_traits<T>::type>::type type;
+      |                                                                                        ^~~~
+In file included from ./include/eigen3/Eigen/Core:343,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Matrix<double, 0, 1, 0, 0, 1>, double, double, Eigen::DenseCoeffsBase<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, 0, 1, 0, 0, 1> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 0, 1, 0, 0, 1> >’
+./include/eigen3/Eigen/src/Core/PlainObjectBase.h:91:7:   [ skipping 3 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+./include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:32:48:   required from ‘struct Eigen::internal::accessors_level<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> > >’
+./include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:116:75:   required from ‘class Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >’
+./include/ceres/internal/autodiff.h:196:12:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 6; int N = 0]’
+./include/ceres/internal/autodiff.h:307:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+   55 |                      >::type PacketReturnType;
+      |                              ^~~~~~~~~~~~~~~~
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:288:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >, 1>’
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:527:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >, 3>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >, double, double, Eigen::DenseCoeffsBase<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >, 3>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+./include/eigen3/Eigen/src/Core/MapBase.h:177:34:   required from ‘class Eigen::MapBase<Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >, 1>’
+./include/eigen3/Eigen/src/Core/Map.h:89:79:   required from ‘class Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >’
+./include/ceres/internal/autodiff.h:196:12:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 6; int N = 0]’
+./include/ceres/internal/autodiff.h:307:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>, 0>’:
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:454:7:   required from ‘class Eigen::DenseCoeffsBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>, 2>’
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>, double, double, Eigen::DenseCoeffsBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>, 2>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false> >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false> >’
+./include/eigen3/Eigen/src/Core/MapBase.h:27:34:   required from ‘class Eigen::MapBase<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>, 0>’
+./include/eigen3/Eigen/src/Core/Block.h:333:7:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+./include/eigen3/Eigen/src/Core/Block.h:104:81:   required from ‘class Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>’
+./include/eigen3/Eigen/src/Core/VectorBlock.h:57:47:   required from ‘class Eigen::VectorBlock<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0>’
+./include/ceres/internal/autodiff.h:197:37:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 6; int N = 0]’
+./include/ceres/internal/autodiff.h:307:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:94:7:   required from ‘class Eigen::CwiseUnaryOpImpl<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, Eigen::Dense>’
+./include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:56:7:   required from ‘class Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/ceres/jet.h:367:35:   required from ‘ceres::Jet<T, N> ceres::operator*(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&) [with T = double; int N = 6]’
+src/uncertainty_pnp.cpp:25:23:   required from ‘bool ReprojectionErrorArray::operator()(const T*, T*) const [with T = ceres::Jet<double, 6>]’
+./include/ceres/internal/variadic_evaluate.h:175:19:   required from ‘static bool ceres::internal::VariadicEvaluate<Functor, T, N0, 0, 0, 0, 0, 0, 0, 0, 0, 0>::Call(const Functor&, const T* const*, T*) [with Functor = ReprojectionErrorArray; T = ceres::Jet<double, 6>; int N0 = 6]’
+./include/ceres/internal/autodiff.h:289:72:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, Eigen::Dense>’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:78:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/ceres/jet.h:367:41:   required from ‘ceres::Jet<T, N> ceres::operator*(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&) [with T = double; int N = 6]’
+src/uncertainty_pnp.cpp:25:23:   required from ‘bool ReprojectionErrorArray::operator()(const T*, T*) const [with T = ceres::Jet<double, 6>]’
+./include/ceres/internal/variadic_evaluate.h:175:19:   required from ‘static bool ceres::internal::VariadicEvaluate<Functor, T, N0, 0, 0, 0, 0, 0, 0, 0, 0, 0>::Call(const Functor&, const T* const*, T*) [with Functor = ReprojectionErrorArray; T = ceres::Jet<double, 6>; int N0 = 6]’
+./include/ceres/internal/autodiff.h:289:72:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, Eigen::Dense>’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:78:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/ceres/jet.h:395:37:   required from ‘ceres::Jet<T, N> ceres::operator/(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&) [with T = double; int N = 6]’
+src/uncertainty_pnp.cpp:25:38:   required from ‘bool ReprojectionErrorArray::operator()(const T*, T*) const [with T = ceres::Jet<double, 6>]’
+./include/ceres/internal/variadic_evaluate.h:175:19:   required from ‘static bool ceres::internal::VariadicEvaluate<Functor, T, N0, 0, 0, 0, 0, 0, 0, 0, 0, 0>::Call(const Functor&, const T* const*, T*) [with Functor = ReprojectionErrorArray; T = ceres::Jet<double, 6>; int N0 = 6]’
+./include/ceres/internal/autodiff.h:289:72:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > > >’
+./include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:94:7:   required from ‘class Eigen::CwiseUnaryOpImpl<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >, Eigen::Dense>’
+./include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:56:7:   required from ‘class Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > > >’
+./include/ceres/jet.h:395:57:   required from ‘ceres::Jet<T, N> ceres::operator/(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&) [with T = double; int N = 6]’
+src/uncertainty_pnp.cpp:25:38:   required from ‘bool ReprojectionErrorArray::operator()(const T*, T*) const [with T = ceres::Jet<double, 6>]’
+./include/ceres/internal/variadic_evaluate.h:175:19:   required from ‘static bool ceres::internal::VariadicEvaluate<Functor, T, N0, 0, 0, 0, 0, 0, 0, 0, 0, 0>::Call(const Functor&, const T* const*, T*) [with Functor = ReprojectionErrorArray; T = ceres::Jet<double, 6>; int N0 = 6]’
+./include/ceres/internal/autodiff.h:289:72:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, Eigen::Dense>’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:78:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/ceres/jet.h:329:35:   required from ‘ceres::Jet<T, N> ceres::operator+(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&) [with T = double; int N = 6]’
+src/uncertainty_pnp.cpp:25:53:   required from ‘bool ReprojectionErrorArray::operator()(const T*, T*) const [with T = ceres::Jet<double, 6>]’
+./include/ceres/internal/variadic_evaluate.h:175:19:   required from ‘static bool ceres::internal::VariadicEvaluate<Functor, T, N0, 0, 0, 0, 0, 0, 0, 0, 0, 0>::Call(const Functor&, const T* const*, T*) [with Functor = ReprojectionErrorArray; T = ceres::Jet<double, 6>; int N0 = 6]’
+./include/ceres/internal/autodiff.h:289:72:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘class Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>’:
+./include/eigen3/Eigen/src/Core/util/XprHelper.h:457:8:   required from ‘struct Eigen::internal::special_scalar_op_base<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, double, double, Eigen::DenseCoeffsBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >, 0>, false>’
+./include/eigen3/Eigen/src/Core/DenseBase.h:41:34:   required from ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/MatrixBase.h:48:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> > >’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:148:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, Eigen::Dense>’
+./include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:78:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 6, 1, 0, 6, 1>, const Eigen::Matrix<double, 6, 1, 0, 6, 1> >’
+./include/ceres/jet.h:348:35:   required from ‘ceres::Jet<T, N> ceres::operator-(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&) [with T = double; int N = 6]’
+src/uncertainty_pnp.cpp:27:24:   required from ‘bool ReprojectionErrorArray::operator()(const T*, T*) const [with T = ceres::Jet<double, 6>]’
+./include/ceres/internal/variadic_evaluate.h:175:19:   required from ‘static bool ceres::internal::VariadicEvaluate<Functor, T, N0, 0, 0, 0, 0, 0, 0, 0, 0, 0>::Call(const Functor&, const T* const*, T*) [with Functor = ReprojectionErrorArray; T = ceres::Jet<double, 6>; int N0 = 6]’
+./include/ceres/internal/autodiff.h:289:72:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:55:30: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+In file included from ./include/eigen3/Eigen/Core:349,
+                 from ./include/ceres/jet.h:166,
+                 from ./include/ceres/internal/autodiff.h:145,
+                 from ./include/ceres/autodiff_cost_function.h:133,
+                 from ./include/ceres/ceres.h:37,
+                 from src/uncertainty_pnp.cpp:3:
+./include/eigen3/Eigen/src/Core/CoreEvaluators.h: In instantiation of ‘struct Eigen::internal::evaluator<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false> >’:
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:648:20:   required from ‘void Eigen::internal::call_dense_assignment_loop(const DstXprType&, const SrcXprType&, const Functor&) [with DstXprType = Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >; SrcXprType = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>; Functor = Eigen::internal::assign_op<double>]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:790:31:   required from ‘static void Eigen::internal::Assignment<DstXprType, SrcXprType, Functor, Eigen::internal::Dense2Dense, Scalar>::run(DstXprType&, const SrcXprType&, const Functor&) [with DstXprType = Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >; SrcXprType = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>; Functor = Eigen::internal::assign_op<double>; Scalar = double]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:747:49:   required from ‘void Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >; Src = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>; Func = Eigen::internal::assign_op<double>]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:712:27:   required from ‘void Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >; Src = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>; Func = Eigen::internal::assign_op<double>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<Rhs>::Shape = Eigen::DenseShape]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:693:18:   required from ‘void Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >; Src = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>]’
+./include/eigen3/Eigen/src/Core/Assign.h:66:28:   required from ‘Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 6, 1, false>; Derived = Eigen::Map<Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, Eigen::Stride<0, 0> >]’
+./include/ceres/internal/autodiff.h:196:56:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 0; int N = 6]’
+./include/ceres/internal/autodiff.h:306:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/CoreEvaluators.h:728:54: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+  728 |     PacketAlignment = unpacket_traits<PacketScalar>::alignment,
+      |                                                      ^~~~~~~~~
+./include/eigen3/Eigen/src/Core/CoreEvaluators.h: In instantiation of ‘struct Eigen::internal::evaluator<Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false> >’:
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:648:20:   required from ‘void Eigen::internal::call_dense_assignment_loop(const DstXprType&, const SrcXprType&, const Functor&) [with DstXprType = Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >; SrcXprType = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>; Functor = Eigen::internal::assign_op<double>]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:790:31:   required from ‘static void Eigen::internal::Assignment<DstXprType, SrcXprType, Functor, Eigen::internal::Dense2Dense, Scalar>::run(DstXprType&, const SrcXprType&, const Functor&) [with DstXprType = Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >; SrcXprType = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>; Functor = Eigen::internal::assign_op<double>; Scalar = double]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:747:49:   required from ‘void Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >; Src = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>; Func = Eigen::internal::assign_op<double>]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:712:27:   required from ‘void Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >; Src = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>; Func = Eigen::internal::assign_op<double>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<Rhs>::Shape = Eigen::DenseShape]’
+./include/eigen3/Eigen/src/Core/AssignEvaluator.h:693:18:   required from ‘void Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >; Src = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>]’
+./include/eigen3/Eigen/src/Core/Assign.h:66:28:   required from ‘Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<const Eigen::Matrix<double, 6, 1, 0, 6, 1>, 0, 1, false>; Derived = Eigen::Map<Eigen::Matrix<double, 0, 1, 0, 0, 1>, 0, Eigen::Stride<0, 0> >]’
+./include/ceres/internal/autodiff.h:196:56:   required from ‘void ceres::internal::Take1stOrderPart(int, const JetT*, T*) [with JetT = ceres::Jet<double, 6>; T = double; int N0 = 6; int N = 0]’
+./include/ceres/internal/autodiff.h:307:5:   required from ‘static bool ceres::internal::AutoDiff<Functor, T, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Differentiate(const Functor&, const T* const*, int, T*, T**) [with Functor = ReprojectionErrorArray; T = double; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:211:66:   required from ‘bool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, N0, N1, N2, N3, N4, N5, N6, N7, N8, N9>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = ReprojectionErrorArray; int kNumResiduals = 2; int N0 = 6; int N1 = 0; int N2 = 0; int N3 = 0; int N4 = 0; int N5 = 0; int N6 = 0; int N7 = 0; int N8 = 0; int N9 = 0]’
+./include/ceres/autodiff_cost_function.h:202:16:   required from here
+./include/eigen3/Eigen/src/Core/CoreEvaluators.h:728:54: warning: ignoring attributes on template argument ‘Eigen::internal::packet_traits<double>::type’ {aka ‘__m128d’} [-Wignored-attributes]
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /home/thws_robotik/anaconda3/envs/pvnet/lib/libstdc++.so: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0010001
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /home/thws_robotik/anaconda3/envs/pvnet/lib/libstdc++.so: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0010002
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /home/thws_robotik/anaconda3/envs/pvnet/lib/libgcc_s.so.1: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0010001
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /home/thws_robotik/anaconda3/envs/pvnet/lib/libgcc_s.so.1: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0010002
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /lib/x86_64-linux-gnu/libc.so.6: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0008002
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /home/thws_robotik/anaconda3/envs/pvnet/lib/libgcc_s.so.1: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0010001
+/home/thws_robotik/anaconda3/envs/pvnet/compiler_compat/ld: warning: /home/thws_robotik/anaconda3/envs/pvnet/lib/libgcc_s.so.1: unsupported GNU_PROPERTY_TYPE (5) type: 0xc0010002

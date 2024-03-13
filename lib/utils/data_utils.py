@@ -17,7 +17,8 @@ from PIL import Image, ImageFile
 from lib.utils.config import cfg
 from lib.utils.extend_utils.extend_utils import farthest_point_sampling
 from lib.utils.base_utils import read_pickle, save_pickle, Projector, PoseTransformer, read_pose, ModelAligner
-from scipy.misc import imread,imsave
+#from scipy.misc import imread,imsave
+import matplotlib.pyplot as plt
 from lib.utils.draw_utils import write_points, pts_to_img_pts, img_pts_to_pts_img
 
 
@@ -311,7 +312,7 @@ class LineModImageDB(object):
             data['dpt_pth']=os.path.join(self.fuse_dir, '{}_mask.png'.format(k))
 
             # if too few foreground pts then continue
-            mask=imread(os.path.join(self.linemod_dir,data['dpt_pth']))
+            mask=cv2.imread(os.path.join(self.linemod_dir,data['dpt_pth']))
             if np.sum(mask==(cfg.linemod_cls_names.index(self.cls_name)+1))<400: continue
 
             data['cls_typ']=self.cls_name
@@ -343,7 +344,7 @@ class LineModImageDB(object):
             data['dpt_pth']=os.path.join(self.ms_dir, '{}_{}_mask.png'.format(k,self.cls_name))
 
             # if too few foreground pts then continue
-            mask=imread(os.path.join(self.linemod_dir,data['dpt_pth']))
+            mask=cv2.imread(os.path.join(self.linemod_dir,data['dpt_pth']))
             if np.sum(mask)<5: continue
 
             data['RT'] = read_pickle(os.path.join(self.linemod_dir, self.ms_dir, '{}_{}_RT.pkl'.format(self.cls_name,k)))['RT']
@@ -488,8 +489,8 @@ class LineModImageDB(object):
             img_num=len(os.listdir(os.path.join(linemod_dir,rgb_dir)))
             print(img_num)
             for k in range(img_num):
-                rgb=imread(os.path.join(linemod_dir, rgb_dir, '{:06}.jpg'.format(k)))
-                msk=imread(os.path.join(linemod_dir, mask_dir, '{:04}.png'.format(k)))
+                rgb=cv2.imread(os.path.join(linemod_dir, rgb_dir, '{:06}.jpg'.format(k)))
+                msk=cv2.imread(os.path.join(linemod_dir, mask_dir, '{:04}.png'.format(k)))
                 msk=(np.sum(msk,2)>0).astype(np.uint8)
 
                 before=np.sum(msk)
@@ -502,8 +503,8 @@ class LineModImageDB(object):
                         rgb,msk=rgb_new, msk_new
                         break
 
-                imsave(os.path.join(linemod_dir,'truncated',cls_name,'{:06}_rgb.jpg'.format(k)),rgb)
-                imsave(os.path.join(linemod_dir,'truncated',cls_name,'{:04}_msk.png'.format(k)),msk)
+                cv2.imwrite(os.path.join(linemod_dir,'truncated',cls_name,'{:06}_rgb.jpg'.format(k)),rgb)
+                cv2.imwrite(os.path.join(linemod_dir,'truncated',cls_name,'{:04}_msk.png'.format(k)),msk)
 
                 pose=read_pose(os.path.join(rt_dir, 'rot{}.rot'.format(k)),
                                os.path.join(rt_dir, 'tra{}.tra'.format(k)))
@@ -990,7 +991,7 @@ class PrinterModelDB(object):
     def validate_original_poses(self):
         for k in range(0,self.image_num,20):
 
-            rgb=imread(self.image_pattern.format(k+1))
+            rgb=cv2.imread(self.image_pattern.format(k+1))
             img_pts=Projector.project_K(self.printer_model_pts.copy(), self.poses[k], self.K['cat'])
             pts_img=img_pts_to_pts_img(img_pts,484,648)
             print(self.poses[k])
@@ -1005,13 +1006,13 @@ class PrinterModelDB(object):
         for k in range(0,self.image_num):
             img_pts=Projector.project_K(self.printer_model_pts.copy(), self.poses[k], self.K['cat'])
             pts_img=img_pts_to_pts_img(img_pts,484,648)
-            imsave(self.mask_pattern.format(k+1),pts_img.astype(np.uint8))
+            cv2.imwrite(self.mask_pattern.format(k+1),pts_img.astype(np.uint8))
 
     def validate_aligned_poses(self):
         aligner=ModelAligner()
         for k in range(0,self.image_num,20):
 
-            rgb=imread(self.image_pattern.format(k+1))
+            rgb=cv2.imread(self.image_pattern.format(k+1))
             pose_aligned=aligner.pose_p2w(self.poses[k])
             img_pts=Projector.project_K(self.model_pts.copy(), pose_aligned, self.K['cat'])
             pts_img=img_pts_to_pts_img(img_pts,484,648)

@@ -1,4 +1,5 @@
-FROM nvidia/cuda:10.2-devel-ubuntu16.04
+#FROM nvidia/cuda:10.2-devel-ubuntu16.04
+FROM nvidia/cuda:11.6.1-devel-ubuntu20.04
 # NOTE: build this image from dir above Dockerfile location
 # USE BASH
 SHELL ["/bin/bash", "-c"]
@@ -8,6 +9,8 @@ ARG username=pvnet
 ARG groupid=1000
 ARG userid=1000
 ## end modify
+
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
          build-essential \

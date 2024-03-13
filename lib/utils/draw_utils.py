@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from transforms3d.euler import euler2mat
-from skimage.io import imsave
+import cv2
 
 
 def visualize_bounding_box(rgb, corners_pred, corners_targets=None, centers_pred=None, centers_targets=None, save=False, save_fn=None):
@@ -70,7 +70,7 @@ def visualize_overlap_mask(img,mask,save_fn):
     for bi in range(b):
         img[bi][mask[bi]>0]//=2
         img[bi][mask[bi]>0]+=np.asarray([0,128,0],np.uint8)
-        imsave(save_fn.format(bi),img[bi])
+        cv2.imwrite(save_fn.format(bi),img[bi])
 
 def visualize_points_3d(pts1,pts2,K,h=480,w=640):
     '''

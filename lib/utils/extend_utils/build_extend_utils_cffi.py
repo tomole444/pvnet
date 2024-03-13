@@ -4,8 +4,10 @@ ceres_include='./include'          # contains Ceres/ceres.h
 ceres_library='./lib/libceres.so'
 eigen_include='./include/eigen3'                     # contains Eigen/Core
 glog_library='./lib/libglog.so'
-cuda_include='/usr/local/cuda-8.0/include'
-cudart = '/usr/local/cuda-8.0/lib64/libcudart.so'
+# cuda_include='/usr/local/cuda-8.0/include'
+cuda_include='/usr/local/cuda-11.7/include/'
+cudart = '/usr/local/cuda-11.7/lib64/libcudart.so'
+#cudart = '/usr/local/cuda-8.0/lib64/libcudart.so'
 
 os.system('gcc -shared src/mesh_rasterization.cpp -c -o src/mesh_rasterization.cpp.o -fopenmp -fPIC -O2 -std=c++11')
 os.system('gcc -shared src/farthest_point_sampling.cpp -c -o src/farthest_point_sampling.cpp.o -fopenmp -fPIC -O2 -std=c++11')
@@ -36,6 +38,6 @@ ffibuilder.set_source("_extend_utils",
                       )
 
 if __name__ == "__main__":
-    ffibuilder.compile(verbose=True)
+    ffibuilder.compile(verbose=False)
     os.system("rm src/*.o")
     os.system("rm *.o")

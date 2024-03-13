@@ -508,7 +508,8 @@ def b_inv(b_mat):
     :return:
     '''
     eye = b_mat.new_ones(b_mat.size(-1)).diag().expand_as(b_mat)
-    b_inv, _ = torch.gesv(eye, b_mat)
+    #b_inv, _ = torch.gesv(eye, b_mat)
+    b_inv = torch.linalg.solve(eye, b_mat)
     return b_inv
 
 def ransac_voting_layer_v3(mask, vertex, round_hyp_num, inlier_thresh=0.999, confidence=0.99, max_iter=20,
