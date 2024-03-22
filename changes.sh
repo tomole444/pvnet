@@ -30,3 +30,8 @@ lrwxrwxrwx   1 root root    20 Mär 25  2022 libcxsparse.so -> libcxsparse.so.3.
 -rw-r--r--   1 root root  471K Mär 25  2022 libcxsparse.a
 lrwxrwxrwx   1 root root    20 Feb 26 00:08 libcxsparse.so.3.1.4 -> libcxsparse.so.3.2.0
 
+#Dataset creation
+https://github.com/F2Wang/ObjectDatasetTools
+
+#PVNet for custom dataset
+https://github.com/zju3dv/clean-pvnet?tab=readme-ov-file#training-on-the-custom-dataset
